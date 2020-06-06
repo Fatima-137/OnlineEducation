@@ -1,0 +1,648 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+}
+/* ..............header section.............. */
+.abc{
+	width: 100%;
+    max-width: 100%;
+}
+.main_header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.main_header .abc,.heroSection{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+img {
+	max-width: 100%;
+    height: auto;
+}
+nav ul {
+	margin: 1em 0 .5em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li {
+    display: inline;
+    margin: 3px;
+}
+nav a {
+	display: inline-block;
+    padding: .5em .5em;
+    font-size: 22px;
+    font-family: 'PT Sans Bold';
+    font-weight: bold;
+    text-decoration: none;
+    color: #184170;
+}
+nav ul li:last-child {
+    margin: -1;
+}
+nav ul li a:hover{
+    background-color: #184170;
+    padding: 11px;
+    color: white;
+} 
+#active{
+    background-color:#184170;
+    color: white;  
+}
+#active:active, #active:hover{
+    background-color: #f60a6c;
+}
+.sign input{
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+    border: none;
+    padding: 15px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    background: #184170;
+}
+.sign input:hover{
+    background-color: #f60a6c;
+}
+.heroSection{
+    background-repeat: no-repeat ;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 164px 20px 65px;
+    animation: slider 10s infinite linear;
+}
+@keyframes slider{
+    0%{
+        background-image: url('main_img1.png'); 
+    }
+    25%{
+        background-image:  url('main_img2.png');
+    }
+    50%{
+        background-image:  url('main_img3.png');
+    }
+    100%{
+        background-image:  url('main_img4.png');
+    }
+}
+.intro{
+    width: 100%;
+    text-align: center;
+    padding: calc(100% / 12);
+}
+.intro h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #184170;
+}
+span{
+    color: #f60a6c;
+}
+.intro p{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    letter-spacing: 0.9px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.main_form{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 60px;
+}
+.form label{
+    text-decoration: none;
+    list-style-type: none;
+}
+.form input{
+    width: 300px;
+    height: 40px;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #18417017;
+    border-radius: 5px;
+    color: #f60a6c;
+    text-decoration: none;
+}
+.form i{
+    position: relative;
+    right: 35px;
+    color: #184170;
+}
+.form input:hover{
+    border: none !important;
+    background-color: #0005;
+}
+ 
+/* ..............End header section.............. */
+
+/* ..............Home page section.............. */
+
+/* ..............Home page first part.............. */
+.main_intro_web{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.intro_web_title{
+    border-bottom: 80px solid #184170;
+	border-right: 80px solid transparent;
+	height: 0;
+    width: 600px;
+    position: relative;
+    top: 50px;
+}
+.intro_web_title h2{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+.intro_web{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #18417017;
+    box-shadow: 5px 2px 5px 2px #18417017;
+}
+.intro_web_para{
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 30px;
+    width: 30%;
+}
+.intro_web_para p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    line-height: 2;
+    letter-spacing: 0.5px;
+}
+.intro_web_img{
+    margin-right: 80px;
+    margin-left: 20px;
+}
+/* ..............End home page first part.............. */
+
+/* ..............Home page second part.............. */
+.main_progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #184170;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.progress_item{
+    text-align: center;
+    color: #fff;
+    padding: 70px;
+}
+.progress_item i{
+    font-size: xxx-large;
+    color: #f60a6c;
+}
+.progress_item h2{
+    font-size: 40px;
+    margin-top: 15px;
+}
+.progress_item h4{
+    font-size: 20px;
+    font-weight: normal;
+}
+/* ..............End home page second part.............. */
+
+/* ..............End home page section.............. */
+
+
+/* ..............About section.............. */
+.about_title{
+    margin-top: 80px;
+}
+.about_intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5px !important;
+    margin: 50px;
+    padding: 20px;
+}
+#hr2{
+    position: relative;
+    bottom: 30px;
+    left: 612px; 
+}
+.about_img{
+    border: 1px solid #18417017;
+    box-shadow: 5px 5px 5px 5px #18417017;
+}
+.about_img, .about_para{
+    width: 45%;
+    margin: 10px;
+}
+.about_para p{
+    letter-spacing: .5px;
+    line-height: 2;
+    color: black !important;
+    font-weight: normal;
+    text-align: justify;
+}
+/* ..............End about section.............. */
+
+
+/* ..............Services section.............. */
+
+/* ..............Services page first part.............. */
+.courses_title{
+    margin-top: 80px;
+}
+#hr3{
+    position: relative;
+    bottom: 30px;
+    left: 616px;
+}
+.main_courses{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.courses_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 50px;
+}
+.courses_detail{
+    text-align: center;
+    width: 20%;
+    border: 1px solid #18417017;
+    padding: 40px;
+    box-shadow: 5px 2px 5px 2px #18417017;
+}
+.courses_detail i{
+    font-size: xxx-large;
+    color: #f60a6c;
+}
+.courses_detail h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #184170;
+    margin-top: 20px;
+}
+/* ..............End services page first part.............. */
+
+/* ..............Services page second part............. */
+hr{
+    width: 120px;
+    height: 3px;
+    position: absolute;
+    left: 625px;
+    background-color: #f60a6c;
+}
+#hr4{
+    position: relative;
+    bottom: 30px;
+    left: 616px; 
+}
+.main_teachers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.teachers_info{
+    max-width: 100%;
+    width: 20%;
+    border: 1px solid #18417017;
+    box-shadow: 5px 2px 5px 2px #18417017;
+}
+.teacher_img img{
+    width: 100%;
+    height: 290px;
+}
+.teacher_detail{
+    text-align: center;
+    text-justify: justify;
+}
+.teacher_detail h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #184170;
+    margin-top: 20px;
+}
+.teacher_detail h4{
+    font-size: 18px;
+    color: #f60a6c;
+    margin-top: 10px;
+}
+.teacher_detail p{
+    text-align: justify;
+    color: #000;
+    margin: 10px;
+    font-weight: normal;
+}
+.social_icon ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-decoration-style: none;
+}
+.social_icon li{
+    display: inline;
+}
+.social_icon a{
+    display: inline-block;
+}
+.social_icon i{
+    font-size: x-large;
+    color: #184170;
+    margin: 10px;
+}
+/* ..............End services page second part............... */
+/* ..............End services section.............. */
+
+/* ..............Gallery section.............. */
+.gallery_title{
+    padding: 30px;
+    margin: 20px;
+}
+.gallery_title h1{
+    padding-bottom: 5px !important;
+    margin-bottom: 0 !important;
+}
+#hr5{
+    position: relative;
+    bottom: -5px;
+    left: 563px;
+}
+.gallery_img{
+    display: block;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 0;
+    margin: 40px;
+    margin-top: 0;
+}
+.gallery_img ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    list-style: none;
+}
+.gallery_img img{
+    width: 500px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid #18417017;
+    box-shadow: 5px 5px 5px 5px #18417017;;
+}
+/* ..............End gallery section............. */
+
+/* ..............Contact section.............. */
+.contact_title{
+    padding: 40px;
+    margin: 50px;
+}
+.main_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1{
+    color: #184170;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hr6{
+    position: relative;
+    bottom: 30px;
+    left: 525px; 
+}
+.mapouter{
+    padding-right: 20px;
+    border: 1px solid #18417017;
+    box-shadow: 5px 5px 5px 5px #18417017;
+}
+p{
+    color: #184170;
+    font-size: 18px;
+    font-weight: bold;
+}
+#message{
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #184170;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    height: 200px !important;
+}
+#send{
+    width: 125px;
+    display: flex;
+    background-color: #184170;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border: none;
+    text-align: center;
+}
+/* ..............End contact section.............. */
+
+
+
+/* ..............Footer section.............. */
+.main_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #184170;
+    padding: 20px;
+    margin-top: 90px;
+}
+.footer_copyright p{
+    font-size: 16px;
+    font-weight: normal !important;
+    color: #fff;
+    padding-top: 5px;
+}
+.footer_social_icon h4{
+    color: #fff;
+    font-size: 18px;
+}
+.footer_social_icon ul{
+    list-style-type: none;
+}
+.footer_social_icon li{
+    display: inline-block;
+}
+.footer_social_icon a{
+    text-decoration: none;
+}
+.footer_social_icon i{
+    font-size: x-large;
+    color: #f60a6c;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* ..............End footer section.............. */
+ 
+ 
+
+
+/* ..............Media Query.............. */
+
+/* ..............Media Query for max-width : 960px............... */
+@media only screen and (max-width: 960px){
+    .progress_item{
+        width: 230px;
+    }
+    .abc img{
+        width: 100px;
+    }
+    nav a {
+         font-size: 18px;
+    }
+    .sign input{
+        min-width: 80px;
+        padding: 9px;
+        font-size: 18px;
+    }
+    .intro_web_title{
+        border-bottom: 64px solid #184170;
+        border-right: 50px solid transparent;
+        height: 0;
+        width: 450px;
+        position: relative;
+        top: 50px;
+    }
+    .intro_web_title h2{
+        text-align: right;
+    }
+    .intro_web_para{
+        margin-left: 50px;
+    }
+    .intro_web_img{
+        margin-right: 50px;
+    }
+    .intro_web_img img{
+        width: 410px;
+    }
+    .progress_item{
+        padding: 30px;
+    }
+}
+/* ..............End media query for max-width : 960px............... */
+/* ..............Media Query for max-width : 640px............... */
+@media only screen and (max-width: 640px){
+    .intro_web_title{
+        border-bottom: 64px solid #184170;
+        border-right: 50px solid transparent;
+        height: 0;
+        width: 300px;
+        position: relative;
+        top: 50px;
+    }
+    .intro_web{
+        position: relative;
+        top: 8px;
+    }
+    .intro_web_title h2{
+        font-size: 1.25rem;
+        text-align: right;
+    }
+    .intro_web_para{
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 30px;
+        width: 100%;
+    }
+    .intro_web_para p{
+        line-height: 1.9;
+        text-align: justify;
+    }
+    .intro_web_img{
+        margin-right: 50px;
+        margin-left: 30px;
+    }
+    .intro_web_img img{
+        width: 900px;
+        height: 370px;
+    }
+    .progress_item{
+        width: 150px;
+        padding: 30px;
+    }
+    .abc img{
+        width: 70px;
+    }
+    nav a {
+         font-size: 12px;
+    }
+    nav ul li:last-child {
+        margin: -1;
+    }
+    .sign input{
+        min-width: 20px;
+        padding: 6px;
+        font-size: 14px;
+    }
+    .main_form{
+        position: relative;
+        top: -25px;
+    }
+    .intro p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+/* ..............End media query for max-width : 640px............... */
+/* ..............End media query.............. */
